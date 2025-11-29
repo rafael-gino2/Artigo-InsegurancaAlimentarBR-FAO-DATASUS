@@ -71,7 +71,7 @@ text
 
 ## 🚀 **Como Reproduzir**
 1. Clone o projeto
-git clone https://github.com/SEU_USUARIO/InsegurancaAlimentarBR-FAO-DATASUS.git
+git clone https://github.com/rafael-gino2/InsegurancaAlimentarBR-FAO-DATASUS.git
 
 2. Ambiente
 pip install -r requirements.txt
