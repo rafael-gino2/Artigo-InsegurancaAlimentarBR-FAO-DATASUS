@@ -10,7 +10,6 @@
 
 🔍 **Descoberta principal**: Correlação negativa forte (**r = -0,856**) sugere **subnotificação massiva** durante a pandemia COVID-19.
 
-![Pandemia Impacto](insira-aqui-figura-pandemia.png)
 
 ## 🎯 **Objetivos**
 - 📈 Comparar tendências FAO vs SUS durante crise pandêmica
