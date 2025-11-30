@@ -52,7 +52,7 @@ text
 ## 📈 **Gráficos Gerados**
 
 ### **Figura 1: Subnutrição por Triênios (FAO)**
-![Subnutrição FAO](Grafico1.png)
+![Subnutrição FAO](Grafico1.PNG)
 
 ### **Figura 2: Insegurança Grave (Pandemia)**
 ![Insegurança Grave](insira-figura2.png)
