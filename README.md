@@ -1,87 +1,68 @@
-# 🍽️ **Insegurança Alimentar no Brasil: FAO x SUS (2014-2024)**
+# 🍽️ Insegurança Alimentar no Brasil: FAO x SUS (2014–2024)
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
-[![Seaborn](https://img.shields.io/badge/Seaborn-FF9999?style=for-the-badge&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+Projeto de análise de dados que investiga a relação entre a insegurança alimentar severa no Brasil, medida pela FAO, e as internações por morbidades nutricionais registradas no SUS (DATASUS), no período de 2014 a 2024.[file:33]
 
-## 📊 **Visão Geral**
-**Análise quantitativa** compara **insegurança alimentar severa** (FAO) com **internações por desnutrição** (SUS/DATASUS), 2014-2024. 
+## 📊 Visão geral do estudo
 
-🔍 **Descoberta crítica**: **Correlação negativa forte (r = -0,856)** revela **subnotificação sistêmica** durante pandemia COVID-19.[file:32]
+O trabalho cruza séries temporais da FAO (insegurança alimentar severa, em milhões de pessoas por triênio) com dados do DATASUS sobre internações por desnutrição (CID-10 E40–E46), agregados em médias trienais para tornar os indicadores comparáveis.[file:33] O foco é entender o que aconteceu durante os anos da pandemia de COVID-19, quando o Brasil voltou ao “Mapa da Fome” ao mesmo tempo em que os registros clínicos de desnutrição caíram.[file:33]
 
-## 🎯 **Objetivos**
-- 📈 Comparar tendências FAO vs SUS na crise pandêmica
-- 🔗 Quantificar correlação Pearson entre indicadores
-- 🚨 Evidenciar falhas na vigilância alimentar brasileira
+## 🎯 Pergunta central
 
-## 💡 **Resultados & Interpretação**
+A pergunta que orienta o projeto é:  
+“Como a evolução da insegurança alimentar severa no Brasil, reportada pela FAO, se relaciona com as internações por desnutrição registradas no SUS entre 2014 e 2024, especialmente durante a pandemia de COVID-19?”[file:33]
 
-### **Tabela 1: Evolução Trienal (2014-2024)**
-| Triênio  | FAO Insegurança Severa | SUS Internações | **Tendência FAO** | **Tendência SUS** |
-|----------|-----------------------|-----------------|-------------------|-------------------|
-| 2014-16  | 5,2% (3,1M)          | 2.156           | **📊 Estável**    | **📉 Decrescente**|
-| 2016-18  | 6,4% (4,0M)          | 1.892           | **📈 Cresc.**     | **📉 Decrescente**|
-| **2018-20**| **6,4% (4,2M)**    | **1.247**       | **📈 Pico pandêmico** | **📉 Queda anormal** |
-| **2020-22**| **17,9% (8,5M)**  | **892**         | **🚨 +180%**      | **📉 -28%**       |
-| 2022-24  | 12,1% (6,8M)         | 1.045           | **📉 Recuperação**| **📊 Estabilização**|
+## 🛠️ Metodologia de análise
 
-**Interpretação**: FAO registra **pico histórico de fome (17,9%)** em 2020-22, enquanto SUS mostra **queda paradoxal (-28%)** nas internações.[file:32]
+- Extração de dados:
+  - FAO/FAOSTAT: população em condição de insegurança alimentar severa, em milhões de pessoas, por triênios.[file:33]
+  - DATASUS: internações hospitalares por desnutrição (CID-10 E40 a E46), de 2014 a 2024.[file:33]
+- Tratamento:
+  - Agregação dos dados anuais do SUS em médias trienais para alinhar à periodicidade da FAO.[file:33]
+  - Análise descritiva e exploratória com Python (Pandas, NumPy, Matplotlib, Seaborn).[file:33]
+- Estatística:
+  - Cálculo da correlação de Pearson entre a série de insegurança alimentar severa (FAO) e a série de internações por desnutrição (SUS).[file:33]
 
-### **Figura 1: Prevalência Subnutrição (%)**
-![Subnutrição FAO](Grafico1.PNG)
-*Brasil reentra no "Mapa da Fome" FAO (2019-2023)*[file:32]
+## 📈 Principais resultados
 
-### **Figura 2: Insegurança Grave (Milhões)**
-![Insegurança Grave](Grafico2.PNG)
-*Pico pandêmico: 8,5M pessoas em fome severa*[file:32]
+- Os dados da FAO mostram um aumento expressivo da insegurança alimentar severa nos triênios que incluem os anos da pandemia, com a proporção da população em fome severa saltando de 6,4% (2018–2020) para 17,9% (2020–2022).[file:33]
+- Paralelamente, as internações por desnutrição no SUS apresentam tendência continuamente decrescente ao longo de todo o período, inclusive nos anos em que a fome mais aumenta.[file:33]
+- A correlação de Pearson entre os dois indicadores é forte e negativa (r = -0,856), indicando que, enquanto a insegurança alimentar cresce, os registros clínicos de desnutrição caminham na direção oposta.[file:33]
 
-### **Figura 3: Internações SUS (Tendência)**
-![Internações SUS](Grafico3.PNG)
-*Queda atípica coincide com caos pandêmico*[file:32]
+## 🔍 Interpretação dos gráficos
 
-## 🔥 **Análise Estatística**
-Correlação Pearson: r = -0,856 (p < 0,01)
-Interpretação: Forte relação INVERSE entre fome (FAO) e internações (SUS)
+- Figura 1 (prevalência de subnutrição, FAO): evidencia o retorno do Brasil ao Mapa da Fome a partir do triênio 2019–2021, com patamares de subnutrição mais altos nos triênios pandêmicos.[file:33][image:1]
+- Figura 2 (pessoas em insegurança alimentar grave): mostra o pico de pessoas em situação de fome severa, atingindo valores históricos durante 2020–2022.[file:33][image:3]
+- Figura 3 (internações por desnutrição – SUS): revela uma trajetória de queda nas médias trienais de internações, mesmo quando a insegurança alimentar está em alta.[file:33][image:2]
 
-text
-**Hipótese explicativa**: Subnotificação SUS durante pandemia (similar a COVID-19: apenas 7,8% casos notificados).[file:32]
+Essa combinação de curvas (FAO em alta x SUS em queda) reforça a hipótese de subnotificação importante de casos clínicos de desnutrição durante a pandemia.[file:33]
 
-## 🛠️ **Metodologia**
-FAO: Insegurança severa (triênios, milhões)
-↓ Agregação SUS: E40-E46 (anual → trienal)
-↓ Correlação Pearson + Visualizações (Python)
+## ⚠️ Limitações discutidas no artigo
+
+- Dados da FAO em triênios, o que reduz a granularidade temporal e pode esconder variações anuais ou sazonais.[file:33]
+- Subnotificação clínica e epidemiológica já documentada para a COVID-19 e outras doenças (como dengue e tuberculose), o que sugere cenário semelhante para a desnutrição.[file:33]
+- Uso de interpolações em alguns pontos das séries, introduzindo margens de estimativa nas análises.[file:33]
+
+## 🚀 Como reproduzir a análise
+
+1. Clonar o repositório:
+git clone https://github.com/rafael-gino2/InsegurancaAlimentarBR-FAO-DATASUS.git
 
 text
-**Limitações**: Granularidade trienal + Subnotificação clínica comprovada.[file:32]
+2. Instalar dependências:
+pip install -r requirements.txt
 
-## 💻 **Códigos Principais**
-
-Correlação Pearson
-pearson_corr = df[['fao_insegura', 'sus_internacoes']].corr().iloc​
-print(f"r = {pearson_corr:.3f}") # -0.856
+text
+3. Baixar ou conferir os dados originais:
+- FAOSTAT (FAO) – indicadores de segurança alimentar.[file:33]
+- DATASUS – internações hospitalares por CID-10.[file:33]
+4. Executar o script principal:
+python analise_completa.py
 
 text
 
-## 🚀 **Reproduzir Análise**
-1. `git clone https://github.com/rafael-gino2/InsegurancaAlimentarBR-FAO-DATASUS.git`
-2. `pip install -r requirements.txt`
-3. Dados: [FAOSTAT](https://www.fao.org/faostat/en/#data/FS) | [DATASUS](https://datasus.saude.gov.br/)
-4. `python analise_completa.py`
+## 👥 Autores
 
-## 👥 **Autores**
-**Rafael de Gino Barbosa** 🧑‍💻 **Rodrigo Santos dos Santos** 🧑‍💻
+Rafael de Gino Barbosa  
+Rodrigo Santos dos Santos[file:33]
 
-**Análise de Dados - Projeto Acadêmico** 📚 [file:32]
-
-## 📚 **Referências**
-- FAO FAOSTAT (2024)[file:32]
-- DATASUS (2024)[file:32]
-- Prado et al. (2020) - Subnotificação COVID[file:32]
-
----
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-Completo-%230074f5?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/License-MIT-%23F8952A?style=for-the-badge">
-</div>
+Projeto acadêmico de Análise de Dados sobre insegurança alimentar, morbidades nutricionais e qualidade dos sistemas de informação em saúde no Brasil.[file:33]
