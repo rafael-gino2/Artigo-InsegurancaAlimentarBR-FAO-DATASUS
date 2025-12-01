@@ -30,13 +30,13 @@ A pergunta que orienta o projeto é:
 
 ## 🔍 Interpretação dos gráficos
 
-- ![Subnutrição FAO](Grafico1.PNG)
+![Subnutrição FAO](Grafico1.PNG)
 - (prevalência de subnutrição, FAO): evidencia o retorno do Brasil ao Mapa da Fome a partir do triênio 2019–2021, com patamares de subnutrição mais altos nos triênios pandêmicos.[file:33][image:1]
   
-- ![Insegurança Grave](Grafico2.PNG)
+![Insegurança Grave](Grafico2.PNG)
 - (pessoas em insegurança alimentar grave): mostra o pico de pessoas em situação de fome severa, atingindo valores históricos durante 2020–2022.[file:33][image:3]
   
-- ![Internações SUS](Grafico3.PNG)
+![Internações SUS](Grafico3.PNG)
 - (internações por desnutrição – SUS): revela uma trajetória de queda nas médias trienais de internações, mesmo quando a insegurança alimentar está em alta.[file:33][image:2]
 
 Essa combinação de curvas (FAO em alta x SUS em queda) reforça a hipótese de subnotificação importante de casos clínicos de desnutrição durante a pandemia.[file:33]
