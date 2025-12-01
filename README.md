@@ -1,4 +1,4 @@
-# 🍽️ Insegurança Alimentar no Brasil: FAO x SUS (2014–2024)
+# 🍽️ INSEGURANÇA ALIMENTAR NO BRASIL: UM ESTUDO SOB O VIÉS DOS DADOS DE MORBIDADES NUTRICIONAIS DO SUS
 
 Projeto de análise de dados que investiga a relação entre a insegurança alimentar severa no Brasil, medida pela FAO, e as internações por morbidades nutricionais registradas no SUS (DATASUS), no período de 2014 a 2024.
 
