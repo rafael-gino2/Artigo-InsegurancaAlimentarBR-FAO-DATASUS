@@ -47,7 +47,7 @@ Essa combinação de curvas (FAO em alta x SUS em queda) reforça a hipótese de
 ## ⚠️ Limitações discutidas no artigo
 
 - Dados da FAO em triênios, o que reduz a granularidade temporal e pode esconder variações anuais ou sazonais.
-- Subnotificação clínica e epidemiológica já documentada para a COVID-19 e outras doenças (como dengue e tuberculose), o que sugere cenário semelhante para a desnutrição.[file:33]
+- Subnotificação clínica e epidemiológica já documentada para a COVID-19 e outras doenças (como dengue e tuberculose), o que sugere cenário semelhante para a desnutrição.
 - Uso de interpolações em alguns pontos das séries, introduzindo margens de estimativa nas análises.
 
 ## 🚀 Como reproduzir os códigos
