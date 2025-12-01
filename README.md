@@ -60,6 +60,13 @@ Obs: Caso queira baixar ou conferir os dados originais:
 - FAOSTAT (FAO) – indicadores de segurança alimentar: https://www.fao.org/faostat/en/#data/FS
 - DATASUS – internações hospitalares por CID-10: https://datasus.saude.gov.br/
 
+## ✅ Aceite em Congresso
+
+Este artigo foi aceito para apresentação no **V CONBRASP - Congresso Brasileiro de Saúde Pública**.  
+Abaixo, o comprovante oficial de aceite enviado pela comissão científica:
+
+![Comprovante de aceite](caminho/para/sua_imagem_aceite.png)
+
 
 ## 👥 Autores
 
