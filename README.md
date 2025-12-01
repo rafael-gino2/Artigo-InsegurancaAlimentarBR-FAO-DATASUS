@@ -65,7 +65,7 @@ Obs: Caso queira baixar ou conferir os dados originais:
 Este artigo foi aceito para apresentação no **V CONBRASP - Congresso Brasileiro de Saúde Pública**.  
 Abaixo, o comprovante oficial de aceite enviado pela comissão científica:
 
-![Comprovante de aceite](caminho/para/sua_imagem_aceite.png)
+![Comprovante de aceite](Comprovante.PNG)
 
 
 ## 👥 Autores
