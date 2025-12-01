@@ -64,6 +64,6 @@ Obs: Caso queira baixar ou conferir os dados originais:
 ## 👥 Autores
 
 Rafael de Gino Barbosa  
-Rodrigo Santos dos Santos[file:33]
+Rodrigo Santos dos Santos
 
-Projeto acadêmico de Análise de Dados sobre insegurança alimentar, morbidades nutricionais e qualidade dos sistemas de informação em saúde no Brasil.[file:33]
+Projeto acadêmico de Análise de Dados sobre insegurança alimentar, morbidades nutricionais e qualidade dos sistemas de informação em saúde no Brasil.
